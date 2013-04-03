@@ -7,11 +7,11 @@ Vagrant.configure("2") do |config|
   # please see the online documentation at vagrantup.com.
 
   # Every Vagrant virtual environment requires a box to build off of.
-  config.vm.box = "Puppetlabs CentOS 5.8 x86_64"
+  config.vm.box = "Puppetlabs CentOS 6.3 x86_64"
     
   # The url from where the 'config.vm.box' box will be fetched if it
   # doesn't already exist on the user's system.
-  config.vm.box_url = "http://puppet-vagrant-boxes.puppetlabs.com/centos-58-x64.box"
+  config.vm.box_url = "http://puppet-vagrant-boxes.puppetlabs.com/centos-63-x64.box"
 
   # Create a forwarded port mapping which allows access to a specific port
   # within the machine from a port on the host machine. In the example below,
@@ -44,7 +44,7 @@ Vagrant.configure("2") do |config|
   #   vb.gui = true
   #
   #   # Use VBoxManage to customize the VM. For example to change memory:
-     vb.customize ["modifyvm", :id, "--name", "scla-driver1-provisionTest", "--memory", "4000", "--cpus", "2"]
+     vb.customize ["modifyvm", :id, "--name", "scla-driver1-provisionTest-centos63", "--memory", "4000", "--cpus", "2"]
    end
   #
   # View the documentation for the provider you're using for more

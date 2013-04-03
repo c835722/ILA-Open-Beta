@@ -45,6 +45,14 @@ yum -y install compat-libstdc++-33
 
 echo "[ILA] compat-libstdc++-33 Installed"
 
+echo "[ILA] centros63 fix changes start"
+
+yum -y install redhat-lsb
+yum -y install compat-libstdc++-33.i686
+yum -y install ksh.x86_64 
+
+echo "[ILA] centros63 fix changes end"
+
 echo "[ILA] Creating Install User and Group"
 
 #create scla user and group
